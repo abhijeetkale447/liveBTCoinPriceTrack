@@ -64,27 +64,15 @@ var updateChart = function (count) {
 				alert("error occurred!");
 			});
 	xVal ++;
-	
-	
-
-	
-
 	if (dps.length > dataLength) {
 		dps.shift();
 	}
-
 	chart.render();
 };
-
 updateChart(dataLength);
 setInterval(function(){updateChart()}, updateInterval);
-
 }
 </script>
-
-
-
-
 </head>
 <body>
 	<div id="chartContainer" style="height: 370px; width: 100%;"></div>
